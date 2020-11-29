@@ -19,20 +19,38 @@
 
 .list {
     list-style: none;
+    margin: 0px;
+    padding: 0px;
 }
 
         /*header*/   
 .header-style {
-    background-color: var(--hero-title-color); 
+    background-color: var(--hero-title-color);    
     letter-spacing: 0.02em;   
     font-weight: 500;
     font-size: 14px;
-    line-height: 1.14; 
+    line-height: 1.14;
+   }
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    outline: 2px solid tomato;
+    width: 1340px;    
+}
+
+.page-header {
+    background-color: #ccc;
 }
 
         /*site-nav*/
+.site-nav {
+    display: flex;
+}
+
+
 .site-nav a {
-    color: var(--title-text-color);
+    color: var(--title-text-color);    
 }
 
 .site-nav a.current {
@@ -60,16 +78,24 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
+    margin-bottom: 0px;
+    margin-top: 0px;
 }
 
         /*hero*/
 .hero {
     color: var(--hero-title-color);
     background-color: var(--hero-background-color);
-    letter-spacing: 0.06em;       
+    letter-spacing: 0.06em;
+    text-align: center; 
+    margin-bottom: 94px;
+    padding-top: 200px;      
+    padding-bottom: 200px;
 }
 
 .hero-title {
+    margin-top: 0px;
+    margin-bottom: 30px;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -79,27 +105,39 @@
 .hero-button {
     color: var(--hero-title-color);
     background-color: var(--accent-color);
-    font-size: 16px;
-    line-height: 1.88;
+    padding: 10px 32px;
+    display: inline-block;
+    font-size: 16px;    
     font-weight: 700;
+    line-height: 1.88;
     letter-spacing: 0.06em;
     text-align:center;
+    border-radius: 4px;
+    border: 1px solid transparent;
 } 
 .current-portfolio-button {
     color: var(--hero-title-color);
     background-color: var(--accent-color);
+    display: inline-block;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.63;
     letter-spacing: 0.03em;
+    border-radius: 4px;
+    padding: 6px 22px;
+    border: 1px solid transparent;
 }
 .portfolio-button {
     color: var(--title-text-color);
     background-color: var(--secondary-background-color);
+    display: inline-block;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.63;
     letter-spacing: 0.03em;
+    border-radius: 4px;
+    padding: 6px 22px;
+    border: 1px solid transparent;
 }
 
         /*section*/
@@ -112,27 +150,61 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
+    margin-bottom: 10px;
 }
 .prima-section-title {
     font-size: 14px;
     line-height: 1.14;
     font-weight: 700;
+    margin-top: 0px;
+    margin-bottom: 10px;
 }
 .prima-section-text {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
+    
 }
 .second-section-title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
     text-align:center;
+    margin-bottom: 61px;
+    margin-top: 0px;
 }
+.third-section-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align:center;
+    margin-bottom: 50px;
+    margin-top: 0px;
+    
+}
+
+.company-functions {
+    padding-bottom: 94px;
+}
+
 .company-team p {
     font-weight: 400;
     font-size: 16px;
-    line-height: 1.19;                
+    line-height: 1.19;
+    margin-bottom: 30px;                
+}
+.company-team img {
+    margin-bottom: 30px;
+}
+
+.company-merits {
+    padding-top: 94px;
+    padding-bottom: 83px;
+}
+
+.company-merits p {
+    margin-top: 0px;
+    
 }
 
 .portfolio-title {
@@ -156,6 +228,8 @@ button {
         /*team*/
 .team {
     background-color: var(--secondary-background-color);
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 a {
@@ -165,8 +239,61 @@ a {
             /*footer*/
 footer {
     background-color: var(--hero-background-color);
-} 
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+footer img {
+    margin-bottom: 20px;
+}
+
+footer p {
+    margin-top: 0px;
+    margin-bottom: 9px;
+}
+
+a.mail {
+    margin-top: 0px;
+    margin-bottom: 9px;
+}
+
+a.telephone {
+    margin-top: 0px;
+    margin-bottom: 60px;
+}
     
 .footer-contact {
     color:rgba(255, 255, 255, 0.6);
+}
+
+.header-portfolio {
+    margin-bottom: 94px;
+}
+
+.portfolio-filtr
+{
+    margin-bottom: 34px;
+}
+
+.webstudio-portfolio img {
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+.webstudio-portfolio h2 {
+    margin-top: 0px;
+    margin-bottom: 4px;
+}
+
+.webstudio-portfolio p {
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+.webstudio-portfolio {
+    margin-bottom: 94px;
+}
+
+.section-title.centered {
+    text-align: center;
 }
