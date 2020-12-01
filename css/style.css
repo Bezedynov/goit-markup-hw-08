@@ -45,7 +45,7 @@ html {
 
         /*header*/   
 .header-style {
-    background-color: var(--hero-title-color);    
+    background-color: var(--hero-title-color);     
     letter-spacing: 0.02em;   
     font-weight: 500;
     font-size: 14px;
@@ -58,7 +58,7 @@ html {
     outline: 2px solid transparent;
     width: 1200px;    
     padding-left: 15px;
-    padding-right: 15px;
+    padding-right: 15px;     
 }
 
 .page-header {
@@ -69,6 +69,8 @@ html {
 .site-nav {
     display: flex;
     margin-left: 93px;
+    padding-bottom: 32px;
+    padding-top: 32px;    
 }
 
 
@@ -78,8 +80,7 @@ html {
 
 .site-nav a {
     color: var(--title-text-color);
-    padding-top: 21px;
-    padding-bottom: 21px;
+ 
     display: block;    
 }
 
@@ -93,7 +94,7 @@ html {
 }
 .main-nav {
     display: flex;
-    align-items: center;    
+    align-items: center; 
 }
 
 .portfolio-filtr button:hover,
