@@ -8,6 +8,26 @@
     --main-background-color: #E5E5E5;
     --secondary-background-color: #F5F4FA;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
         
         /*Body*/
 .page {
@@ -29,18 +49,20 @@
     letter-spacing: 0.02em;   
     font-weight: 500;
     font-size: 14px;
-    line-height: 1.14;
+    line-height: 1.14;    
    }
 
 .container {
     margin-left: auto;
     margin-right: auto;
     outline: 2px solid tomato;
-    width: 1340px;    
+    width: 1200px;    
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .page-header {
-    background-color: #ccc;
+    margin-bottom: 93px;
 }
 
         /*site-nav*/
@@ -71,8 +93,7 @@
 }
 .main-nav {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    align-items: center;    
 }
 
 .portfolio-filtr button:hover,
@@ -90,7 +111,7 @@
     margin-bottom: 0px;
     margin-top: 0px;
     display: flex;
-    margin-left: auto;
+    margin-left: 331px;
     
     color: var(--primary-text-color);
     font-weight: 400;
@@ -104,6 +125,7 @@
 .contact-info .item + .item {
     margin-left: 50px;
 }
+
 
         /*hero*/
 .hero {
@@ -174,6 +196,7 @@
     font-size: 16px;
     line-height: 1.19;
     margin-bottom: 10px;
+    text-align: center;
 }
 .prima-section-title {
     font-size: 14px;
@@ -207,23 +230,37 @@
 }
 
 .company-functions {
+    display: flex;
     padding-bottom: 94px;
 }
+.company-functions li + li {
+    margin-left: 30px;
+}
 
-.company-team p {
+.company-team {    
+    display: flex; 
+}
+.company-team li + li {
+    margin-left: 30px;  
+}
+
+.company-team p {    
     font-weight: 400;
     font-size: 16px;
     line-height: 1.19;
-    margin-bottom: 30px;                
+    margin-bottom: 30px; 
+    text-align: center;               
 }
 .company-team img {
     margin-bottom: 30px;
 }
 
-.company-merits {
-    padding-top: 94px;
-    padding-bottom: 83px;
+.company-merits {    
+    margin-bottom: 83px;
     display: flex;
+}
+.company-merits li:not(:last-child) {
+    margin-right: 30px;
 }
 
 .company-merits p {
@@ -285,6 +322,11 @@ a.telephone {
     margin-top: 0px;
     margin-bottom: 60px;
 }
+
+.footer {
+    box-sizing: border-box;
+    display: block;
+}
     
 .footer-contact {
     color:rgba(255, 255, 255, 0.6);
@@ -294,9 +336,19 @@ a.telephone {
     margin-bottom: 94px;
 }
 
-.portfolio-filtr
-{
+.portfolio-filtr {
+    display: flex;    
+        
+    justify-content: center;
+    border: 1px solid transparent;
+}
+.portfolio-filtr-container {
+   
+    height: 54px;
     margin-bottom: 34px;
+}
+.portfolio-filtr li + li {
+    margin-left: 8px;
 }
 
 .webstudio-portfolio img {
@@ -316,11 +368,14 @@ a.telephone {
 .webstudio-portfolio li {
     width: 370px;
     margin-right: 30px;
+    margin-left: 0;
+    padding-left: 0;
+    background-color: red;
 }
 .webstudio-portfolio li:nth-child(3n) {
     margin-right: 0;
 }
-.webstudio-portfolio li:nth-child(-n+3) {
+.webstudio-portfolio li:nth-child(-n+6) {
     margin-bottom: 30px;
 }
 
@@ -328,7 +383,7 @@ a.telephone {
     display: flex;
     flex-wrap: wrap;
     width: 1200px;
-    padding-left: 15px;
+    
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
