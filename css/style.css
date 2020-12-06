@@ -130,8 +130,8 @@ html {
 
         /*hero*/
 .hero {
-    color: var(--hero-title-color);
-    background-color: var(--hero-background-color);
+    color: var(--hero-title-color); 
+    background-color: var(--hero-background-color);   
     letter-spacing: 0.06em;
     text-align: center; 
     margin-bottom: 94px;
@@ -161,6 +161,26 @@ html {
     border-radius: 4px;
     border: 1px solid transparent;
 } 
+     /* overlay */
+     .overlay {
+        max-width: 1600px;
+        height: 600px;
+        margin-left: auto;
+        margin-right: auto;
+        outline: 1px solid black;
+        background-color: linear-gradient(
+            to right,
+            rgba(255, 0, 0, 0.5),
+            rgba(0, 0, 255, 0.5)
+            );         
+        background-image: url(../images/header-img\ .jpg);    
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        
+    }  
+
+
 .current-portfolio-button {
     color: var(--hero-title-color);
     background-color: var(--accent-color);
@@ -298,6 +318,11 @@ a {
     text-decoration: none;
 } 
 
+.team-card {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
             /*footer*/
 footer {
     background-color: var(--hero-background-color);
@@ -393,3 +418,5 @@ a.telephone {
 .section-title.centered {
     text-align: center;
 }
+
+       
