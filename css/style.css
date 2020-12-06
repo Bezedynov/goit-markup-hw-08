@@ -52,15 +52,6 @@ html {
     line-height: 1.14;    
    }
 
-.container {
-    margin-left: auto;
-    margin-right: auto;
-    outline: 2px solid transparent;
-    width: 1200px;    
-    padding-left: 15px;
-    padding-right: 15px;     
-}
-
 .page-header {
     margin-bottom: 124px;
 }
@@ -121,23 +112,49 @@ html {
 }
 .contact-info a {
     padding-top: 21px;
-    padding-bottom: 21px;    
+    padding-bottom: 21px;
+    text-decoration: none;    
 }
 .contact-info .item + .item {
     margin-left: 50px;
 }
 
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    outline: 2px solid transparent;
+    width: 1200px;    
+    padding-left: 15px;
+    padding-right: 15px;     
+}
 
         /*hero*/
 .hero {
-    color: var(--hero-title-color); 
-    background-color: var(--hero-background-color);   
-    letter-spacing: 0.06em;
-    text-align: center; 
-    margin-bottom: 94px;
-    padding-top: 200px;      
-    padding-bottom: 200px;
+    display: flex;
+    max-width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    
+    background-color: var(--hero-background-color); 
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/header-img\ .jpg);              
+    background-size: cover;
+    background-position: center;
+    text-align: center;      
 }
+.hero .container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 696px;
+}
+
+
 
 .hero-title {
     margin-top: 0px;
@@ -146,6 +163,8 @@ html {
     font-size: 44px;
     line-height: 1.36;
     text-align:center;
+    color: var(--hero-title-color);
+    letter-spacing: 0.06em;
 }  
 
 .hero-button {
@@ -161,25 +180,10 @@ html {
     border-radius: 4px;
     border: 1px solid transparent;
 } 
-     /* overlay */
-     .overlay {
-        max-width: 1600px;
-        height: 600px;
-        margin-left: auto;
-        margin-right: auto;
-        outline: 1px solid black;
-        background-color: linear-gradient(
-            to right,
-            rgba(255, 0, 0, 0.5),
-            rgba(0, 0, 255, 0.5)
-            );         
-        background-image: url(../images/header-img\ .jpg);    
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        
-    }  
 
+.section-features {
+    padding-top: 94px;     
+}
 
 .current-portfolio-button {
     color: var(--hero-title-color);
