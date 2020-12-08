@@ -83,19 +83,7 @@ html {
  color: mediumblue;
 }
 
-      /*button under team cards*/
-.action {
-    display: flex;
-    margin: 0;
-    padding: 0;
-    outline: 1px dotted coral;
-    list-style: none;
-}
-
-.button-icon {
-    height: 20px;
-    width: 20px;
-}
+      
 
 
 /*.action .icon-instagram {
@@ -398,9 +386,7 @@ html {
     margin-bottom: 18px; 
     text-align: center;               
 }
-.company-team img {
-    margin-bottom: 30px;
-}
+
 
 .company-merits {    
     margin-bottom: 83px;
@@ -434,6 +420,7 @@ button {
 }
 
         /*team*/
+
 .team {
     background-color: var(--secondary-background-color);
     padding-top: 94px;
@@ -451,6 +438,48 @@ a {
     width: calc((100% - 90px) / 4);
     text-align: center;
 }
+
+
+    /*button under team cards*/
+.social-network {
+    display: flex;
+    padding: 0;
+    margin: 0;     
+    list-style: none;
+  }
+  
+  .social-network .link:hover {
+    background-color: var(--accent-color);
+  }
+  
+  .social-network .list:last-child {
+    margin-right: 0;
+  }  
+  .social-network .link {
+    display: flex;
+    height: 44px;
+    width: 44px;
+    align-items: center;
+  
+    border-radius: 50%;
+    margin-right: 10px;
+    color: var(--icon-gray-color);
+  }
+  
+  .social-network .link:hover {
+    color: var(--primary-white-color);
+  }
+  
+  .social-network .button-icon {
+    height: 20px;
+    width: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    fill: currentColor;
+  }
+  .social-network .list {
+      margin-left: 0;
+  }
 .card-bottom {
     padding: 30px 32px;
 }
@@ -471,6 +500,8 @@ footer p {
     margin-bottom: 9px;
 }
 
+
+
 a.mail {
     margin-top: 0px;
     margin-bottom: 9px;
@@ -489,6 +520,8 @@ a.telephone {
 .footer-contact {
     color:rgba(255, 255, 255, 0.6);
 }
+
+
 
 .header-portfolio {
     margin-bottom: 94px;
