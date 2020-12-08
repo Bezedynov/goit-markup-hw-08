@@ -10,6 +10,7 @@
     <title>WebStudio</title>
 </head>
 <body class="page">
+       
     <!--Шапка сайта-->
     <header class="header-style">
         <div class="container">
@@ -21,10 +22,10 @@
                     <li class="item"><a href="./portfolio.html">Портфолио</a></li>
                     <li class="item"><a href="">Контакты</a></li>
                 </ul>
-                <address>
+                <address class="header-contacts">
                     <ul class="contact-info list">
-                        <li class="item"><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                        <li class="item"><a href="tel:380961111111">+38-096-111-11-11</a></li>            
+                        <li class="item"><a class="icon-email" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                        <li class="item"><a class="icon-smart" href="tel:380961111111">+38-096-111-11-11</a></li>            
                     </ul>
                 </address>
             </nav>
@@ -44,25 +45,25 @@
       <div class="container">
         <!-- <h2>Положительные характеристики компании</h2>-->
         <ul class="company-merits list">
-            <li>
+            <li class="list-item icon-antenna">
                 <h3 class="prima-section-title">Внимание к деталям</h3>
                 <p class="prima-section-text">
                     Идейные соображения, а также начало повседневной работы по формированию позиции.
                 </p>
             </li>
-            <li>
+            <li class="list-item icon-clock">
                 <h3 class="prima-section-title">Пунктуальность</h3>
                 <p class="prima-section-text">
                     Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
                 </p>
             </li>
-            <li>
+            <li class="list-item icon-diagram">
                 <h3 class="prima-section-title">Планирование</h3>
                 <p class="prima-section-text">
                     Равным образом консультация с широким активом в значительной степени обуславливает.
                 </p>
             </li>
-            <li>
+            <li class="list-item icon-astronaut">
                 <h3 class="prima-section-title">Современные технологии</h3>
                 <p class="prima-section-text">
                     Значимость этих проблем настолько очевидна, что реализация плановых заданий.
@@ -95,9 +96,27 @@
         <h2 class="third-section-title">Наша команда</h2>
         <ul class="company-team list">
             <li class="team-card">
-                <img src="./images/img4.jpg" alt="фото Игорь Демьяненко" width="270"> 
-                <h3 class="team-title">Игорь Демьяненко</h3>
-                <p>Product Designer</p>
+                <img src="./images/img4.jpg" alt="фото Игорь Демьяненко" width="270">
+                <div class="card-bottom">
+                    <h3 class="team-title">Игорь Демьяненко</h3>
+                    <p>Product Designer</p>
+                    <ul class="action">
+                        <li>
+                            <button class="button">
+                                <svg class="button-icon">
+                                    <use href="./images/symbol-defs.svg#icon-instagram"></use>                   
+                                </svg>
+                            </button>
+                        </li>
+                        <li><button><svg><use href="./images/symbol-defs.svg#icon-twitter"></use></svg></button></li>
+                        <li><button><svg><use href="./images/symbol-defs.svg#icon-facebook"></use></svg></button></li>
+                        <li><button><svg><use href="./images/symbol-defs.svg#icon-linkedin"></use></svg></button></li>
+                    </ul>
+
+
+                </div> 
+                
+               
             </li>
             <li class="team-card"> 
                 <img src="./images/img5.jpg" alt="фото Ольга Репина" width="270">
@@ -116,6 +135,23 @@
             </li>
         </ul>
       </div>
+
+        <ul class="action">
+            <li>
+                <button class="button">
+                    <svg class="button-icon">
+                        <use href="./images/symbol-defs.svg#icon-instagram"></use>                   
+                    </svg>
+                </button>
+            </li>
+            <li><button><svg><use href="./images/symbol-defs.svg#icon-twitter"></use></svg></button></li>
+            <li><button><svg><use href="./images/symbol-defs.svg#icon-facebook"></use></svg></button></li>
+            <li><button><svg><use href="./images/symbol-defs.svg#icon-linkedin"></use></svg></button></li>
+        </ul>
+
+
+
+
     </section>  
  </main>  
    <!--Футер страницы-->

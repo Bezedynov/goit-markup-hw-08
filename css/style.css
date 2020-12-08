@@ -55,6 +55,99 @@ html {
 .page-header {
     margin-bottom: 124px;
 }
+.header-contacts {
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+}
+.header-contacts .icon-email::before {
+    content: "";
+    display: inline-block;
+    height: 12px;
+    width: 16px;
+    margin-right: 10px;
+    background-image: url(../images/envelope.svg);
+}
+
+.header-contacts .icon-smart::before {
+    content: "";
+    display: inline-block;
+    height: 16px;
+    width: 10px;
+    margin-right: 10px;
+    background-image: url(../images/smartphone.svg);
+}
+
+.header-contacts .icon-email::before:hover,
+.header-contacts .icon-smart::before:hover {
+ color: mediumblue;
+}
+
+      /*button under team cards*/
+.action {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    outline: 1px dotted coral;
+    list-style: none;
+}
+
+.button-icon {
+    height: 20px;
+    width: 20px;
+}
+
+
+/*.action .icon-instagram {
+    background-image: url(../images/instagram\ 2.svg);
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+}
+.action .icon-twitter {
+    background-image: url(../images/twitter\ 1.svg);
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+}
+.action .icon-icon-facebook {
+    background-image: url(../images/facebook\ 1.svg);
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+}
+.action .icon-linkedin {
+    background-image: url(../images/linkedin\ 1.svg);
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+}  */
+
+
+
+
+/*.team-card::after {
+    content: "";
+    display: inline-block;
+    height: 44px;
+    width: 208px;
+    margin-left: 32px;
+    margin-right: 32px;
+    margin-bottom: 30px;
+    outline: 1px solid rebeccapurple;
+    
+    background-image: ;  
+
+}*/
+
 
         /*site-nav*/
 .site-nav {
@@ -103,7 +196,7 @@ html {
     margin-bottom: 0px;
     margin-top: 0px;
     display: flex;
-    margin-left: 331px;
+    margin-left: 305px;
     
     color: var(--primary-text-color);
     font-weight: 400;
@@ -113,10 +206,10 @@ html {
 .contact-info a {
     padding-top: 21px;
     padding-bottom: 21px;
-    text-decoration: none;    
+    font-style: normal;   
 }
 .contact-info .item + .item {
-    margin-left: 50px;
+    margin-left: 30px;
 }
 
 .container {
@@ -146,15 +239,14 @@ html {
         url(../images/header-img\ .jpg);              
     background-size: cover;
     background-position: center;
-    text-align: center;      
+    text-align: center;
+    margin-bottom: 94px;      
 }
 .hero .container {
     margin-left: auto;
     margin-right: auto;
     width: 696px;
 }
-
-
 
 .hero-title {
     margin-top: 0px;
@@ -165,6 +257,7 @@ html {
     text-align:center;
     color: var(--hero-title-color);
     letter-spacing: 0.06em;
+    text-transform: uppercase;
 }  
 
 .hero-button {
@@ -181,8 +274,36 @@ html {
     border: 1px solid transparent;
 } 
 
-.section-features {
-    padding-top: 94px;     
+.list-item {
+    width: 270px;
+    
+}
+.list-item::before{
+    display: block;
+    content: "";    
+    height: 120px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #F5F4FA;
+    border-radius: 4px;
+    margin-bottom: 30px;
+ 
+}
+
+.icon-antenna::before {
+    background-image: url(../images/antenna\ 1.svg);
+}
+
+.icon-clock::before {
+    background-image: url(../images/clock\ 1.svg);
+}
+
+.icon-diagram::before {
+    background-image: url(../images/diagram\ 1.svg);
+}
+
+.icon-astronaut::before {
+    background-image: url(../images/astronaut\ 1.svg);
 }
 
 .current-portfolio-button {
@@ -229,6 +350,7 @@ html {
     font-weight: 700;
     margin-top: 0px;
     margin-bottom: 10px;
+    text-transform: uppercase;
 }
 .prima-section-text {
     font-weight: 400;
@@ -273,7 +395,7 @@ html {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.19;
-    margin-bottom: 30px; 
+    margin-bottom: 18px; 
     text-align: center;               
 }
 .company-team img {
@@ -325,6 +447,12 @@ a {
 .team-card {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+    background-color: #FFFFFF;
+    width: calc((100% - 90px) / 4);
+    text-align: center;
+}
+.card-bottom {
+    padding: 30px 32px;
 }
 
             /*footer*/
