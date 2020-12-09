@@ -7,6 +7,7 @@
     --hero-background-color: #2F303A;
     --main-background-color: #E5E5E5;
     --secondary-background-color: #F5F4FA;
+    --icon-gray-color: #AFB1B8;
 }
 
 h1,
@@ -60,67 +61,31 @@ html {
     margin-left: auto;
     align-items: center;
 }
-.header-contacts .icon-email::before {
-    content: "";
-    display: inline-block;
-    height: 12px;
-    width: 16px;
-    margin-right: 10px;
-    background-image: url(../images/envelope.svg);
-}
 
-.header-contacts .icon-smart::before {
-    content: "";
-    display: inline-block;
-    height: 16px;
-    width: 10px;
-    margin-right: 10px;
-    background-image: url(../images/smartphone.svg);
-}
 
 .header-contacts .icon-email::before:hover,
 .header-contacts .icon-smart::before:hover {
  color: mediumblue;
 }
 
-      
-
-
-/*.action .icon-instagram {
-    background-image: url(../images/instagram\ 2.svg);
-    width: 40px;
-    height: 40px;
-    padding: 0;
-    border: none;
-    cursor: pointer;
-}
-.action .icon-twitter {
-    background-image: url(../images/twitter\ 1.svg);
-    width: 40px;
-    height: 40px;
-    padding: 0;
-    border: none;
-    cursor: pointer;
-}
-.action .icon-icon-facebook {
-    background-image: url(../images/facebook\ 1.svg);
-    width: 40px;
-    height: 40px;
-    padding: 0;
-    border: none;
-    cursor: pointer;
-}
-.action .icon-linkedin {
-    background-image: url(../images/linkedin\ 1.svg);
-    width: 40px;
-    height: 40px;
-    padding: 0;
-    border: none;
-    cursor: pointer;
-}  */
-
-
-
+.header-style .icon-email::before {
+    display: inline-block;
+    content: '';
+    height: 12px;
+    width: 16px;
+    margin-right: 10px;
+    background-image: url('../images/envelope.svg');
+  }
+  
+  .header-style .icon-smart::before {
+    display: inline-block;
+    content: '';
+    height: 16px;
+    width: 10px;
+    margin-right: 10px;
+    background-image: url('../images/smartphone.svg');
+    align-self: center;
+  }      
 
 /*.team-card::after {
     content: "";
@@ -402,7 +367,7 @@ html {
 }
 
 .portfolio-title {
-    color: var( --title-text-color);
+    color: var(--title-text-color);
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
@@ -467,7 +432,7 @@ a {
   }
   
   .social-network .link:hover {
-    color: var(--primary-white-color);
+    color: var(--hero-title-color);
   }
   
   .social-network .button-icon {
@@ -483,6 +448,57 @@ a {
 .card-bottom {
     padding: 30px 32px;
 }
+
+
+/* Clients */
+
+.clients-title {
+    margin-bottom: 50px;
+  
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+  
+    color: var(--title-text-color);
+  }
+  
+.clients-lists {
+    display: flex;
+    margin: 0 -15px;
+  }
+  
+.clients .list {
+    display: inline-block;
+    margin: 0 15px;
+  }
+  
+.clients .link {
+    display: flex;
+    width: 170px;
+    height: 90px;
+    align-items: center;
+    justify-content: center;
+  
+    border: 1px solid var(--icon-gray-color);
+    border-radius: 4px;
+    color: var(--icon-gray-color);
+  }
+  
+.clients .link:hover {
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+  }
+  
+.clients .icon {
+    fill: currentColor;
+  }
+
+.clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
 
             /*footer*/
 footer {
