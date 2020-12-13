@@ -55,6 +55,8 @@ html {
 
 .page-header {
     margin-bottom: 124px;
+    border-bottom: 1px solid #ececec;
+
 }
 .header-contacts {
     display: flex;
