@@ -65,21 +65,25 @@ html {
 }
 
 
-.header-contacts .icon-email::before:hover,
-.header-contacts .icon-smart::before:hover {
- color: mediumblue;
+.header-contacts .icon-email:hover,
+.header-contacts .icon-smart:hover {
+ color: var(--accent-color);
 }
 
-.header-style .icon-email::before {
+/* .contact-info .icon:hover {
+    color: var(--accent-color);
+} */
+
+/* .header-style .icon-email::before {
     display: inline-block;
     content: '';
     height: 12px;
     width: 16px;
     margin-right: 10px;
     background-image: url('../images/envelope.svg');
-  }
+  } */
   
-  .header-style .icon-smart::before {
+  /* .header-style .icon-smart::before {
     display: inline-block;
     content: '';
     height: 16px;
@@ -87,7 +91,7 @@ html {
     margin-right: 10px;
     background-image: url('../images/smartphone.svg');
     align-self: center;
-  }      
+  }       */
 
 /*.team-card::after {
     content: "";
@@ -123,9 +127,7 @@ html {
     display: block;    
 }
 
-.site-nav a.current {
-    color: var(--accent-color);
-}
+
 
 .site-nav a:hover,
 .site-nav a:focus {
@@ -144,6 +146,10 @@ html {
 
 .contact-info a:hover,
 .contact-info a:focus {
+    color: var(--accent-color);
+}
+
+.contact-info icon-email:hover {
     color: var(--accent-color);
 }
 
