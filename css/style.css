@@ -230,17 +230,23 @@ a {
 }  
 
 .hero-button {
-    color: var(--hero-title-color);
-    background-color: var(--accent-color);
-    padding: 10px 32px;
     display: inline-block;
+    padding: 10px 32px;    
+    min-width: 200px;
+
     font-size: 16px;    
     font-weight: 700;
     line-height: 1.88;
     letter-spacing: 0.06em;
     text-align:center;
+    
     border-radius: 4px;
-    border: 1px solid transparent;
+    border: none;
+
+    color: var(--hero-title-color);
+    background-color: var(--accent-color);
+
+    cursor: pointer;
 } 
 
 .list-item {
@@ -765,6 +771,55 @@ a.telephone {
 }
 
 
+/* Modal button */
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+  
+    width: 100%;
+    height: 100%;
+  
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  
+  .backdrop.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  
+    min-width: 528px;
+    min-height: 580px;
+  
+    transform: translate(-50%, -50%);
+    background-color: var(--hero-title-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+  }
+  
+  .modal-close {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+  
+    width: 30px;
+    height: 30px;
+    padding: 0;
+  
+    background-image: url('../images/close.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+  
+    cursor: pointer;
+  }
   
 
     
