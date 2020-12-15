@@ -61,14 +61,30 @@ a {
 .page-header {
     margin-bottom: 124px;
     border-bottom: 1px solid #ececec;
-
 }
+
+.header-style .link {
+    display: flex;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    align-items: center;
+  }
 .header-contacts {
     display: flex;
     margin-left: auto;
     align-items: center;
 }
-
+.site-nav .link.current::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  
+    height: 4px;
+    width: 100%;
+    background-color: var(--accent-color);
+    border-radius: 2px;
+  }
 
 .header-contacts .icon-email:hover,
 .header-contacts .icon-smart:hover {
@@ -92,10 +108,16 @@ a {
         /*site-nav*/
 .site-nav {
     display: flex;
-    margin-left: 93px;
-    padding-bottom: 32px;
-    padding-top: 32px;    
+    margin-left: 93px; 
 }
+
+.site-nav .item {
+    position: relative;
+  }
+
+.site-nav .link.current {
+    color: var(--accent-color);
+  }
 
 
 .site-nav .item + .item {
@@ -326,9 +348,37 @@ a {
 .company-functions {
     display: flex;
     padding-bottom: 94px;
+   
 }
+
+.company-functions .item {
+    position: relative;
+}
+
 .company-functions li + li {
     margin-left: 30px;
+}
+
+.service-text{
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    padding: 27px 15px;    
+    margin: 0;
+
+    color: var(--hero-title-color);
+    text-transform: uppercase;
+    text-align: center;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+
+    background-color: rgba(47, 48, 58, 0.8);
 }
 
 .company-team {    
@@ -634,18 +684,70 @@ a.telephone {
     margin-top: 0px;
     margin-bottom: 20px;
 }
-.webstudio-portfolio li {
-    width: 370px;
+.webstudio-portfolio .item {
+    width: calc((100% - 60px) / 3);
     margin-right: 30px;
+    margin-bottom: 30px;
     margin-left: 0;
-    padding-left: 0;    
+    padding-left: 0;
+    background-color: var(--hero-title-color);
+    border: 1px solid #eeeeee;    
 }
-.webstudio-portfolio li:nth-child(3n) {
+
+.webstudio-portfolio .item:hover,
+.webstudio-portfolio .item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+
+  transition: var(--timing-function);
+}
+
+.webstudio-portfolio .item:nth-child(3n) {
     margin-right: 0;
 }
-.webstudio-portfolio li:nth-child(-n+6) {
+.webstudio-portfolio .item:nth-child(-n+6) {
     margin-bottom: 30px;
 }
+
+.image-part {
+    position: relative;
+    overflow: hidden;
+  }
+
+.webstudio-portfolio a:hover .overlay-text,
+.webstudio-portfolio a:focus .overlay-text {
+  transform: translateY(0);
+}
+
+.overlay-text {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+  
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    /* padding: 63px 24px; - размеры границ для текста из макета */
+  
+    font-size: 18px;
+    line-height: 1.56;
+    color: var(--hero-title-color);
+    text-transform: uppercase;
+    text-align: center;
+    
+    align-items: center;  
+    background-color: rgba(33, 150, 243, 0.9);
+  
+    overflow: hidden;
+    transform: translateY(100%);
+    transition: transform var(--timing-function);
+}
+
+.text-part {
+    padding: 20px 24px;    
+}
+
 
 .webstudio-portfolio {
     display: flex;
@@ -662,8 +764,7 @@ a.telephone {
     text-align: center;
 }
 
-.webstudio-portfolio .item:hover {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-      1px 4px 6px rgba(0, 0, 0, 0.16);
-      transition: var(--timing-function);
-  }       
+
+  
+
+    
