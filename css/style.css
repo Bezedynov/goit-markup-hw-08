@@ -7,7 +7,7 @@
     --hero-background-color: #2F303A;
     --main-background-color: #E5E5E5;
     --secondary-background-color: #F5F4FA;
-    --icon-gray-color: #AFB1B8;
+    --icon-gray-color: #afb1b8;
     --timing-function: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -535,10 +535,11 @@ button {
     color: var(--icon-gray-color);
   }
   
-.clients .link:hover {
+.clients .link:hover,
+.clients .link:focus {
     color: var(--accent-color);
     border-color: var(--accent-color);
-    transition: var(--timing-function);
+    transition: var(--timing-function);   
   }
   
 .clients .icon {
