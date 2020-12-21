@@ -336,6 +336,15 @@
                 <li class="list"><a class="link icon-facebook" href=""></a></li>
                 <li class="list"><a class="link icon-linkedin" href=""></a></li>
             </ul>
+        </div>
+        <div class="footer-form">
+            <b class="footer-title">Подпишитесь на рассылку</b>
+            <div class="form-subscribe">
+                <form action="" method="post">
+                    <input type="email" name="mail" id="mail" placeholder="E-mail">
+                    <button class="footer-button">Подписаться</button>
+                </form>
+            </div>            
         </div> 
     </div>
    </footer>
@@ -343,7 +352,50 @@
    <!-- Modal window -->
    <div class="backdrop is-hidden" data-modal>
     <div class="modal">
+      <b class="modal-title">Оставьте свои данные, мы вам перезвоним</b>
       <button class="modal-close" data-modal-close></button>
+
+      <form class="form">
+        
+        <div class="form-field">   <!--чтобы выстроить не в строку а в столбец, можем обернуть в div не для семантики а для того, чтобы придать блочную форму-->
+            <label for="name">Имя</label>
+            <input type="text" name="name" id="name" placeholder="Иван Иванович">
+        </div>
+        
+        
+        <div class="form-field">
+            <label for="tel">Телефон</label>
+            <input type="tel" name="tel" id="tel" autofocus placeholder="Вводить в режиме +380...">
+        </div>
+        
+        
+        <div class="form-field">
+            <label for="mail">Почта</label>
+            <input type="email" name="mail" id="mail">
+        </div>
+        
+        
+
+           
+
+            <!--Оставляем коментарий -->  
+        <div class="form-field">
+            <label for="comment">Оставьте коментарий</label> 
+            <textarea name="comment" id="comment" cols="30" rows="10" class="comment"></textarea>
+        </div>
+            
+            <!--Подтверждаем политику конфиденциальности --> 
+        <div class="form-field">
+            <input type="checkbox" name="" id="policy">
+            <label for="policy">Соглашаюсь с условиями конфиденциальности</label>
+        </div>
+        
+        <button type="submit">Отправить</button>
+
+    </form>
+
+
+
     </div>
   </div>
   <script src="./js/modal.js"></script>
