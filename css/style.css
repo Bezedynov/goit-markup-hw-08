@@ -464,6 +464,7 @@ button {
   .social-network .link:hover {
     background-color: var(--accent-color);
     transition: var(--timing-function);
+    color: var(--hero-title-color);
   }
   
   .social-network .list:last-child {
