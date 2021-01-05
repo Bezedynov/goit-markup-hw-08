@@ -1,0 +1,117 @@
+.header-style {
+    background-color: $hero-title-color;     
+    letter-spacing: 0.02em;   
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;    
+   }
+
+.header-portfolio {
+    margin-bottom: 124px;
+    border-bottom: 1px solid #ececec;
+}
+
+.header-style .link {
+    display: flex;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    align-items: center;
+  }
+
+.header-contacts {
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+}
+
+.site-nav .link.current::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  
+    height: 4px;
+    width: 100%;
+    background-color: $accent-color;
+    border-radius: 2px;
+  }
+
+.header-contacts .icon-email:hover,
+.header-contacts .icon-smart:hover {
+ color: $accent-color;
+ fill: $accent-color;
+ transition: $timing-function;
+}
+
+.header-contacts .icon {
+    
+    --color2: currentColor;
+    --color5: currentColor;
+  }
+
+.contact-info .icon:hover {
+    color: $accent-color;
+    transition: $timing-function;
+} 
+
+  /*site-nav*/
+  .site-nav {
+    display: flex;
+    margin-left: 93px; 
+}
+
+.site-nav .item {
+    position: relative;
+  }
+
+.site-nav .link.current {
+    color: $accent-color;
+  }
+
+.site-nav .item + .item {
+    margin-left: 50px;
+}
+
+.site-nav a {
+    color: $title-text-color;
+ 
+    display: block;    
+}
+
+.site-nav a:hover,
+.site-nav a:focus {
+    color: $accent-color;
+    transition: $timing-function;
+}
+
+.main-nav {
+    display: flex;
+    align-items: center; 
+}
+
+.contact-info a:hover,
+.contact-info a:focus {
+    color: $accent-color;
+    transition: $timing-function;
+}
+
+.contact-info {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    display: flex;
+    margin-left: 305px;
+    
+    color: $primary-text-color;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71; 
+}
+.contact-info a {
+    padding-top: 21px;
+    padding-bottom: 21px;
+    font-style: normal;
+    color: $primary-text-color;   
+}
+.contact-info .item + .item {
+    margin-left: 30px;
+}

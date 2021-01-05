@@ -1,0 +1,61 @@
+ /* Section-Features */
+
+ .list-item {
+    width: 270px;
+    
+}
+.list-item::before{
+    display: block;
+    content: "";    
+    height: 120px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #F5F4FA;
+    border-radius: 4px;
+    margin-bottom: 30px; 
+}
+
+.icon-antenna::before {
+    background-image: url('../../../images/icon/features/antenna\ 1.svg');
+}
+
+.icon-clock::before {
+    background-image: url('../../../images/icon/features/clock\ 1.svg');
+}
+
+.icon-diagram::before {
+    background-image: url('../../../images/icon/features/diagram\ 1.svg');
+}
+
+.icon-astronaut::before {
+    background-image: url('../../../images/icon/features/astronaut\ 1.svg');
+}
+.prima-section-title {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+      
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  margin-top: 0px;
+}
+
+.prima-section-title,
+.second-section-title {
+    color: $title-text-color;
+}
+.prima-section-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;  
+}
+.company-merits {    
+  margin-bottom: 83px;
+  display: flex;
+}
+.company-merits li:not(:last-child) {
+  margin-right: 30px;
+}
+.company-merits p {
+  margin-top: 0px;  
+}

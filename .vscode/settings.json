@@ -1,0 +1,24 @@
+{
+	"liveSassCompile.settings.formats": [
+		// Эти две настройки компилируют все файлы, которые в SASSе не имеют нижнего подчеркивания в начале в папку "css" и в папку "min.css" (сжатую)
+		
+		{
+			"format": "expanded",
+			"extensionName": ".css",
+			"savePath": "/css"
+		},
+		{
+			"format": "compressed",
+			"extensionName": ".min.css",
+			"savePath": "/css"
+		}
+	],
+	"liveSassCompile.settings.excludeList": ["**/node_modules/**", ".vscode/**"],
+	"liveSassCompile.settings.generateMap": true,   
+	"liveSassCompile.settings.autoprefix": ["> 1%", "last 2 versions"],
+	"liveServer.settings.port": 1235
+}
+
+// Первая строка из 3-х верхних означает "исключить тз сжатия (оптимизации)"
+// Вторая прописывает порядок зависимостей файлов css и файлов scss
+// Третья строка - автопрефиксеры, которые применяются к свойствам, которые не читаются некоторыми браузерами
