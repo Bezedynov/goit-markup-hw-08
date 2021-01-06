@@ -1,13 +1,19 @@
   /* Services block (company functions) */
-  .second-section-title {
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 1.17;
+//   .second-section-title {
+//     font-size: 36px;
+//     font-weight: 700;
+//     line-height: 1.17;
   
-    text-align:center;
+//     text-align:center;
+//     margin-bottom: 61px;
+//     margin-top: 0px;
+//   }
+
+  .second-section-title {
+    @extend %title;
     margin-bottom: 61px;
-    margin-top: 0px;
   }
+
   .company-functions {
       display: flex;
       padding-bottom: 94px;   

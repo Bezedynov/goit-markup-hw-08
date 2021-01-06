@@ -25,18 +25,30 @@
             .footer-networks {
                 margin-right: 93px;
               }
-            .footer-title {
-                display: inline-block;
-                margin-bottom: 20px;
+            // .footer-title {
+            //     display: inline-block;
+            //     margin-bottom: 20px;
               
-                font-weight: 700;
-                font-size: 14px;
-                line-height: 1.14;
-                letter-spacing: 0.03em;
-                text-transform: uppercase;
+            //     font-weight: 700;
+            //     font-size: 14px;
+            //     line-height: 1.14;
+            //     letter-spacing: 0.03em;
+            //     text-transform: uppercase;
             
-                color: $hero-title-color;
+            //     color: $hero-title-color;
+            // }
+
+            .footer-title {        
+              @extend %little-title;
+          
+              letter-spacing: 0.03em;
+              
+              display: inline-block;
+              margin-bottom: 20px;
+          
+              color: var(--hero-title-color);
             }
+
             .footer-icon .list:not(:last-child) {
                 margin-right: 10px;
               }

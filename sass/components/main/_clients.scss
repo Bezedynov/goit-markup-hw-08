@@ -1,14 +1,20 @@
 /* Clients */
+// .clients-title {
+//     margin-bottom: 50px;
+  
+//     font-weight: 700;
+//     font-size: 36px;
+//     line-height: 1.17;
+//     text-align: center;
+  
+//     color: $title-text-color;
+//   }
+
 .clients-title {
-    margin-bottom: 50px;
-  
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
-    text-align: center;
-  
-    color: $title-text-color;
-  }
+  @extend %title;    
+  margin-bottom: 50px;  
+  color: $title-text-color;
+}
   
 .clients-lists {
     display: flex;
@@ -30,13 +36,13 @@
     border: 1px solid $icon-gray-color;
     border-radius: 4px;
     color: $icon-gray-color;
-  }
-  
-.clients .link:hover,
-.clients .link:focus {
+
+    &:hover,
+    &:focus {
     color: $accent-color;
     border-color: $accent-color;
-    transition: $timing-function;   
+    transition: $timing-function;  
+    }    
   }  
 .clients .icon {
     fill: currentColor;
