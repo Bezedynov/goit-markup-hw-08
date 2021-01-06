@@ -2,7 +2,6 @@
 
  .list-item {
     width: 270px;
-    
     &::before{
       display: block;
       content: "";    
@@ -16,21 +15,30 @@
 }
 
 
-.icon-antenna::before {
+.icon-antenna {
+  &::before {
     background-image: url('../../../images/icon/features/antenna\ 1.svg');
+  }
 }
 
-.icon-clock::before {
+.icon-clock {
+  &::before {
     background-image: url('../../../images/icon/features/clock\ 1.svg');
 }
+}
 
-.icon-diagram::before {
+.icon-diagram {
+  &::before {
     background-image: url('../../../images/icon/features/diagram\ 1.svg');
 }
-
-.icon-astronaut::before {
+}
+ 
+.icon-astronaut {
+  &::before {
     background-image: url('../../../images/icon/features/astronaut\ 1.svg');
 }
+}
+
 // .prima-section-title {
 //   font-size: 14px;
 //   font-weight: 700;
@@ -57,13 +65,15 @@
   font-size: 14px;
   line-height: 1.71;  
 }
-.company-merits {    
+.features-list {    
   margin-bottom: 83px;
   display: flex;
-}
-.company-merits li:not(:last-child) {
-  margin-right: 30px;
-}
-.company-merits p {
-  margin-top: 0px;  
+
+  & li:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  & p {
+    margin-top: 0px;  
+  }
 }
