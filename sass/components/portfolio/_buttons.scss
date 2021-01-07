@@ -1,11 +1,11 @@
 /* Portfolio buttons */
 
-.portfolio-filtr button:hover,
-.portfolio-filtr button:focus {
-    background-color: $accent-color;
-    color: $hero-title-color;
-    transition: $timing-function;
-}
+// .portfolio-filtr button:hover,
+// .portfolio-filtr button:focus {
+//     background-color: $accent-color;
+//     color: $hero-title-color;
+//     transition: $timing-function;
+// }
 
 .portfolio-button {
   color: $title-text-color;
@@ -18,7 +18,15 @@
   border-radius: 4px;
   padding: 6px 22px;
   border: 1px solid transparent;
-}
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    color: $hero-title-color;
+    transition: $timing-function;
+    }
+  }
+
 
 .portfolio-filtr {
   display: flex;    

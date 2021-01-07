@@ -25,18 +25,7 @@
             .footer-networks {
                 margin-right: 93px;
               }
-            // .footer-title {
-            //     display: inline-block;
-            //     margin-bottom: 20px;
-              
-            //     font-weight: 700;
-            //     font-size: 14px;
-            //     line-height: 1.14;
-            //     letter-spacing: 0.03em;
-            //     text-transform: uppercase;
-            
-            //     color: $hero-title-color;
-            // }
+
 
             .footer-title {        
               @extend %little-title;
@@ -46,12 +35,14 @@
               display: inline-block;
               margin-bottom: 20px;
           
-              color: var(--hero-title-color);
+              color: $hero-title-color;
             }
 
-            .footer-icon .list:not(:last-child) {
+            .footer-icon .list {
+              &:not(:last-child) {
                 margin-right: 10px;
               }
+            }
             .footer-networks .link {
                 display: inline-block;
                 height: 44px;
@@ -64,23 +55,40 @@
               } 
               .footer-networks .icon-instagram {
                 background-image: url('../../images/icon/social/instagram 2 f.svg');
+
+                &:hover {
+                  background-color: $accent-color;
+                  transition: $timing-function;
+                }
               }
+              
               .footer-networks .icon-twitter {
                 background-image: url('../../images/icon/social/twitter 1 f.svg');
+
+                &:hover {
+                  background-color: $accent-color;
+                  transition: $timing-function;
+                }
               }
+
               .footer-networks .icon-facebook {
                 background-image: url('../../images/icon/social/facebook 1 f.svg');
+
+                &:hover {
+                  background-color: $accent-color;
+                  transition: $timing-function;
+                }
               }
+
               .footer-networks .icon-linkedin {
                 background-image: url('../../images/icon/social/linkedin 1 f.svg');
+
+                &:hover {
+                  background-color: $accent-color;
+                  transition: $timing-function;
+                }
               }  
-              .footer-networks .icon-instagram:hover,
-              .footer-networks .icon-twitter:hover,
-              .footer-networks .icon-facebook:hover,
-              .footer-networks .icon-linkedin:hover {
-                background-color: $accent-color;
-                transition: $timing-function;
-              }
+
               .footer-icon {
                 display: flex;
                 padding: 0;
@@ -95,10 +103,12 @@
                 filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
                 border-radius: 4px;
                 background-color: inherit;
+
+                &::placeholder {
+                  color: $contacts-color;     
+                }
             }
-            .form-subscribe input::placeholder {
-                color: $contacts-color;     
-            }
+
             .form-subscribe .footer-button {
                 display: flex;
                 padding: 10px 29px;
@@ -117,16 +127,18 @@
                 background-color: $accent-color;
               
                 cursor: pointer;
-              }
-              .form-subscribe .footer-button::after {
-              display: inline-block;
-              content: '';
-              width: 24px;
-              height: 24px;
-              margin-left: 10px;
-            
-              background-image: url('../../images/icon\ send.svg');
+
+                &::after {
+                  display: inline-block;
+                  content: '';
+                  width: 24px;
+                  height: 24px;
+                  margin-left: 10px;
+                
+                  background-image: url('../../images/icon\ send.svg');
+                }
             }
+
             .form-subscribe form {
                 display: flex;
               }
@@ -139,4 +151,3 @@
             .footer-contact {
                 color:rgba(255, 255, 255, 0.6);
             }
-             
