@@ -15,6 +15,7 @@
   margin-bottom: 10px;
   color: $title-text-color;
 }
+
 // .third-section-title {
 // font-size: 36px;
 // font-weight: 700;
@@ -27,14 +28,18 @@
 
 .third-section-title {
   @extend %title;
-  margin-bottom: 50px;   
+  
+  @media screen and (min-width: $desktop) {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
 }
 
 .company-team p {    
     font-weight: 400;
     font-size: 16px;
     line-height: 1.19;
-    margin-bottom: 18px; 
+    margin-bottom: 15px; 
     text-align: center;               
 }
 
