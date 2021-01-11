@@ -218,6 +218,18 @@ button {
   margin-bottom: 20px;
 }
 
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
 .header-style {
   background-color: #FFFFFF;
   letter-spacing: 0.02em;
@@ -479,6 +491,17 @@ button {
 }
 
 /* Services block (company functions) */
+.services {
+  display: none;
+  padding-bottom: 94px;
+}
+
+@media screen and (min-width: 1200px) {
+  .services {
+    display: block;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .second-section-title {
     font-size: 36px;
@@ -672,11 +695,6 @@ button {
 
 .clients .icon {
   fill: currentColor;
-}
-
-.clients {
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 /*footer*/

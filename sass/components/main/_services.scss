@@ -1,13 +1,12 @@
   /* Services block (company functions) */
-//   .second-section-title {
-//     font-size: 36px;
-//     font-weight: 700;
-//     line-height: 1.17;
+  .services {
+    display: none;
+    padding-bottom: 94px;
   
-//     text-align:center;
-//     margin-bottom: 61px;
-//     margin-top: 0px;
-//   }
+    @media screen and (min-width: $desktop) {
+      display: block;
+    }
+  }
 
   .second-section-title {
     @extend %title;
