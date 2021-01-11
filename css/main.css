@@ -175,6 +175,49 @@ button {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.logo {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.17;
+  color: #2196F3;
+}
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+    line-height: 1.19;
+  }
+}
+
+.header-logo {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .header-logo {
+    margin-right: 92px;
+  }
+}
+
+.logo-first {
+  color: #000000;
+}
+
+.logo-second {
+  color: #FFFFFF;
+}
+
+.footer-logo {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
 .header-style {
   background-color: #FFFFFF;
   letter-spacing: 0.02em;
