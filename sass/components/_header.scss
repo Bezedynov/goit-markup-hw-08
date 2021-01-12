@@ -1,10 +1,30 @@
 .header-style {
-    background-color: $hero-title-color;     
-    letter-spacing: 0.02em;   
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;    
+    // background-color: $hero-title-color;     
+    // letter-spacing: 0.02em;   
+    // font-weight: 500;
+    // font-size: 14px;
+    // line-height: 1.14;
+    
+    position: relative;
+    z-index: 1;
+    
    }
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media screen and (min-width: $tablet) {
+        justify-content: start;
+      }
+    }
+
+.site-nav {
+    display: flex;
+    margin-left: 93px; 
+    }
+
 
 .header-portfolio {
     margin-bottom: 124px;
@@ -46,10 +66,7 @@
 } 
 
   /*site-nav*/
-  .site-nav {
-    display: flex;
-    margin-left: 93px; 
-}
+
 
 .site-nav .item {
     position: relative;
@@ -88,10 +105,7 @@
 }
 
 
-.main-nav {
-    display: flex;
-    align-items: center; 
-}
+
 
 .contact-info {
     margin-bottom: 0px;
