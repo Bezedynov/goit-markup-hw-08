@@ -827,7 +827,7 @@ footer img {
   margin: 0;
 }
 
-.form-subscribe input {
+.footer-input {
   width: 358px;
   padding: 15px;
   margin-right: 12px;
@@ -840,23 +840,23 @@ footer img {
   background-color: inherit;
 }
 
-.form-subscribe input::-webkit-input-placeholder {
+.footer-input::-webkit-input-placeholder {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.form-subscribe input:-ms-input-placeholder {
+.footer-input:-ms-input-placeholder {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.form-subscribe input::-ms-input-placeholder {
+.footer-input::-ms-input-placeholder {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.form-subscribe input::placeholder {
+.footer-input::placeholder {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.form-subscribe .footer-button {
+.footer-button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -876,7 +876,7 @@ footer img {
   cursor: pointer;
 }
 
-.form-subscribe .footer-button::after {
+.footer-button::after {
   display: inline-block;
   content: '';
   width: 24px;
@@ -885,7 +885,7 @@ footer img {
   background-image: url("../../images/icon send.svg");
 }
 
-.form-subscribe form {
+.footer-form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
