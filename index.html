@@ -324,32 +324,38 @@
    <!--Футер страницы-->
    <footer class="footer">
     <div class="footer-container">
+      <div class="footer-info">
         <div class="footer-contacts">
-            <a class="footer-logo logo" href="./index.html">
-                Web<span class="logo-second">Studio</span>
-            </a>
-           <ul class="contact-info-footer list">
-               <li> <p>г. Киев, пр-т Леси Украинки, 26</p></li>
-               <li class="mail"><a class="footer-contact" href="mailto:info@example.com">info@example.com</a></li>
-               <li class="footer-telephon"><a class="footer-contact telephone" href="tel:+38-096-111-11-11">+38-096-111-11-11</a></li>              
-           </ul>       
+          <img src="./images/webstudio-black.png" alt="logo-of-webstudio-black-background">
+          <ul class="contact-info-footer list">
+             <li> <p>г. Киев, пр-т Леси Украинки, 26</p></li>
+             <li class="mail"><a class="footer-contact" href="mailto:info@example.com">info@example.com</a></li>
+             <li class="footer-telephon"><a class="footer-contact telephone" href="tel:+38-096-111-11-11">+38-096-111-11-11</a></li>              
+          </ul>       
         </div>
 
         <div class="footer-networks">
-            <b class="footer-title">Присоединяйтесь</b>
-            <ul class="footer-icon">
-                <li class="list"><a class="link icon-instagram" href=""></a></li>
-                <li class="list"><a class="link icon-twitter" href=""></a></li>
-                <li class="list"><a class="link icon-facebook" href=""></a></li>
-                <li class="list"><a class="link icon-linkedin" href=""></a></li>
-            </ul>
+          <b class="footer-title">Присоединяйтесь</b>
+          <ul class="footer-icon">
+              <li class="list"><a class="link icon-instagram" href=""></a></li>
+              <li class="list"><a class="link icon-twitter" href=""></a></li>
+              <li class="list"><a class="link icon-facebook" href=""></a></li>
+              <li class="list"><a class="link icon-linkedin" href=""></a></li>
+          </ul>
         </div>
-        <div>
-            <b class="footer-title">Подпишитесь на рассылку</b>           
-                <form class="footer-form" action="" method="post">
-                    <input class="footer-input" type="email" name="mail" id="mail" placeholder="E-mail">
-                    <button class="footer-button button">Подписаться</button>
-                </form>            
+      </div>
+
+
+
+
+        <div class="footer-form">
+            <b class="footer-title">Подпишитесь на рассылку</b>
+            <div class="form-subscribe">
+                <form action="" method="post">
+                    <input type="email" name="mail" id="mail" placeholder="E-mail">
+                    <button class="footer-button">Подписаться</button>
+                </form>
+            </div>            
         </div> 
     </div>
    </footer>
@@ -386,32 +392,32 @@
             </svg>
           </div>
         </label>
-        <label class="form-label">
-          <span class="form-text">Комментарий</span>
-          <textarea
-            class="comment"
-            name="comment"
-            rows="7"
-            placeholder="Введите текст"
-          ></textarea>
-        </label>
-        <label class="form-policy">
-          <input class="checkbox" type="checkbox" name="policy" />
-          <span class="policy-icon"></span>
-          Соглашаюсь с рассылкой и принимаю
-          <a class="link" href="">Условия договора</a>
-        </label>
-        <button class="btn button" type="submit">Отправить</button>
+         <label class="form-label">
+           <span class="form-text">Комментарий</span>
+           <textarea
+              class="comment"
+              name="comment"
+              rows="7"
+              placeholder="Введите текст"
+            ></textarea>
+          </label>
+          <label class="form-policy">
+             <input class="checkbox" type="checkbox" name="policy" />
+             <span class="policy-icon"></span>
+             Соглашаюсь с рассылкой и принимаю
+             <a class="link" href="">Условия договора</a>
+           </label>
+         <button class="btn" type="submit">Отправить</button>
       </form>
-      <button class="modal-close" data-modal-close>
-        <svg class="icon-close" width="11" height="11">
-          <use href="./images/sprite-modal.svg#close-modal"></use>
-        </svg>
-      </button>
-    </div>
+        <button class="modal-close" data-modal-close>
+          <svg class="icon-close" width="11" height="11">
+            <use href="./images/sprite-modal.svg#close-modal"></use>
+          </svg>
+        </button>
+     </div>
   </div>
   <script src="./js/modal.js"></script>
-
+  <script src="./js/menu.js"></script>
   </body>
   </html>
   
