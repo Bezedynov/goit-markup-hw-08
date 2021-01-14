@@ -1,13 +1,6 @@
-.header-style {
-    // background-color: $hero-title-color;     
-    // letter-spacing: 0.02em;   
-    // font-weight: 500;
-    // font-size: 14px;
-    // line-height: 1.14;
-    
+.header-style {   
     position: relative;
-    z-index: 1;
-    
+    z-index: 1;    
    }
 
 .main-nav {
@@ -19,117 +12,227 @@
         justify-content: start;
       }
     }
+    
+.menu-container {
+  text-align: center;
+  width: 100%;
 
-.site-nav {
-    display: flex;
-    margin-left: 93px; 
+  @media screen and (max-width: 767px) {
+    display: none;
+    padding: 60px 20px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    border-top: 1px solid #ececec;
+
+    &.is-open {
+      display: block;
+      background-color: $hero-title-color;
     }
-
-
-.header-portfolio {
-    margin-bottom: 124px;
-    border-bottom: 1px solid #ececec;
-}
-
-.header-style .link {
-    display: flex;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    align-items: center;
   }
 
-.header-contacts {
+  @media screen and (min-width: $tablet) {
     display: flex;
-    margin-left: auto;
+    justify-content: space-between;
+    text-align: left;
+  }
+}
+
+.site-nav {   
+    @media screen and (min-width: $tablet) {
+      display: flex;
+    }
+}
+
+.site-nav .item {
+
+    @media screen and (max-width: 767px) {
+        &:not(:last-child) {
+          margin-bottom: 40px;
+        }
+    
+        &:last-child() {
+          margin-bottom: 60px;
+        }
+      }
+    
+      @media screen and (min-width: $tablet) {
+        &:not(:last-child) {
+          margin-right: 50px;
+        }
+      }
+    // position: relative;
+  }
+.header-link {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.17;
+  
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: $title-text-color;
+  
+    transition: $timing-function;
+  
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
+  
+    @media screen and (max-width: 767px) {
+      margin-bottom: 40px;
+    }
+  
+    @media screen and (min-width: $tablet) {
+      font-size: 14px;
+      line-height: 1.14;
+      display: inline-block;
+      padding-top: 32px;
+      padding-bottom: 32px;
+    }
+  
+    @media screen and (min-width: $desktop) {
+      font-size: 14px;
+      line-height: 1.14;
+    }
+}
+
+.site-nav .current {
+    position: relative;
+    color: $accent-color;
+  
+    @media screen and (max-width: 767px) {
+      padding-bottom: 8px;
+    }
+  
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 4px;
+  
+      background-color: $accent-color;
+      border-radius: 2px;
+    }
+}
+
+.menu-button {
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+    color: $title-text-color;
+  
+    &:hover {
+      color: $accent-color;
+    }
+  
+    @media screen and (min-width: $tablet) {
+      display: none;
+    }
+  }
+
+  .menu-icon {
+    fill: currentColor;
+  }
+
+  .menu-button.is-open .button-menu {
+    display: none;
+  }
+
+  .button-close {
+    display: none;
+  }
+
+  .menu-button.is-open .button-close {
+    display: block;
+  }
+
+  .header-contacts {
+  margin-left: auto;
+
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    margin-top: 19px;
+    margin-bottom: 19px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
     align-items: center;
+  }
 }
 
 .header-contacts .icon-email,
 .header-contacts .icon-smart {
-    &:hover{
-    color: $accent-color;
-    fill: $accent-color;
+    
+    display: block;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+  
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.17;
+  
+    letter-spacing: 0.02em;
+    color: $primary-text-color;
+  
     transition: $timing-function;
+  
+    &:hover,
+    &:focus {
+      color: $accent-color;
+      --color2: currentColor;
+      --color5: currentColor;
+    }
+  
+    @media screen and (max-width: 767px) {
+      &:first-child {
+        margin-bottom: 16px;
+      }
+    }
+  
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
+      font-size: 12px;
+      line-height: 1.17;
+  
+      &:first-child {
+        margin-bottom: 10px;
+      }
+    }
+  
+    @media screen and (min-width: $desktop) {
+      display: flex;
+      font-size: 14px;
+      line-height: 1.14;
+  
+      &:first-child {
+        margin-right: 30px;
+      }
     }
 }
 
 .header-contacts .icon {    
-    --color2: currentColor;
-    --color5: currentColor;
-  }
+    margin-right: 10px;
 
-.contact-info .icon {
-    &:hover {
-    color: $accent-color;
-    transition: $timing-function;
+    @media screen and (min-width: $tablet) {
+      margin-right: 8px;
     }
-} 
-
-  /*site-nav*/
-
-
-.site-nav .item {
-    position: relative;
   }
 
-.site-nav .link.current {
-    color: $accent-color;
+  .icon-smart {
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
+      display: flex;
+    }
+  }
 
-    &::after {
-        content: '';
-        position: absolute;
-        bottom: 0;
-        left: 0;
-      
-        height: 4px;
-        width: 100%;
-        background-color: $accent-color;
-        border-radius: 2px;
-      }
-}
-
-.site-nav .item + .item {
-    margin-left: 50px;
-}
-
-.site-nav a {
-    color: $title-text-color;
- 
-    display: block;
-    
-    &:hover,
-    &:focus {
-        color: $accent-color;
-        transition: $timing-function;
-    } 
-}
-
-
-
-
-.contact-info {
-    margin-bottom: 0px;
-    margin-top: 0px;
-    display: flex;
-    margin-left: 305px;
-    
-    color: $primary-text-color;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71; 
-}
-.contact-info a {
-    padding-top: 21px;
-    padding-bottom: 21px;
-    font-style: normal;
-    color: $primary-text-color; 
-
-    &:hover,
-    &:focus {
-    color: $accent-color;
-    transition: $timing-function;
-    }    
-}
-.contact-info .item + .item {
-    margin-left: 30px;
-}
+  .header-portfolio {
+    border-bottom: 1px solid #ececec;
+  }
