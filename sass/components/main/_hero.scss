@@ -2,60 +2,115 @@
         .hero {
             position: relative;
             display: flex;
+            padding-top: 118px;
+            padding-bottom: 118px;
             max-width: 1600px;
             height: 400px;
             margin-left: auto;
             margin-right: auto;
-            padding-top: 118px;
-            padding-bottom: 118px;
             align-items: center;
             justify-content: center;
             text-align: center;
-            
-            background-color: $hero-background-color; 
+          
+            background-color: $hero-background-color;
             background-image: linear-gradient(
                 to right,
                 rgba(47, 48, 58, 0.4),
                 rgba(47, 48, 58, 0.4)
-                ),
-                url('../images/header-img\ .jpg');              
+              ),
+              url('../images/bg-mobile-576.jpg');
             background-size: cover;
             background-position: center;
-
-            @media screen and (min-width: 480px) {
-                width: 480px;
+          
+            @media screen and (min-width: $desktop) {
+              padding: 0;
+              height: 600px;
+            }
+          }
+          
+          @media screen and (min-device-pixel-ratio: 2),
+            screen and (min-resolution: 192dpi),
+            screen and (min-resolution: 2dppx) {
+            .hero {
+              background-image: linear-gradient(
+                  to right,
+                  rgba(47, 48, 58, 0.4),
+                  rgba(47, 48, 58, 0.4)
+                ),
+                url('../images/bg-mobile@2x.jpg');
+            }
+          }
+          
+          @media screen and (min-width: 960px) {
+            .hero {
+              background-image: linear-gradient(
+                  to right,
+                  rgba(47, 48, 58, 0.4),
+                  rgba(47, 48, 58, 0.4)
+                ),
+                url('../images/bg-tablet-960.jpg');
+            }
+          
+            @media screen and (min-device-pixel-ratio: 2),
+              screen and (min-resolution: 192dpi),
+              screen and (min-resolution: 2dppx) {
+              .hero {
+                background-image: linear-gradient(
+                    to right,
+                    rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)
+                  ),
+                  url('../images/bg-tablet@2x.jpg');
               }
-            
-            // @media screen and (min-width: $tablet) {               
-            //     width: 768px;
-            //   }  
-            
-            
-            // @media screen and (min-width: $desktop) {                
-            //     width: 1140px;
-            //   }                
+            }
+          }
+          
+          @media screen and (min-width: $desktop) {
+            .hero {
+              background-image: linear-gradient(
+                  to right,
+                  rgba(47, 48, 58, 0.4),
+                  rgba(47, 48, 58, 0.4)
+                ),
+                url('../images/desktop.jpg');
+            }
+          
+            @media screen and (min-device-pixel-ratio: 2),
+              screen and (min-resolution: 192dpi),
+              screen and (min-resolution: 2dppx) {
+              .hero {
+                background-image: linear-gradient(
+                    to right,
+                    rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)
+                  ),
+                  url('../images/desktop@2x.jpg');
+              }
+            }
         }
-        .hero .container {
-            margin-left: auto;
-            margin-right: auto;
-            width: 696px;
-        }
+
+        .hero-container {
+            width: 390px;
+          
+            @media screen and (min-width: $desktop) {
+              width: 696px;
+            }
+          }  
+
         
         .hero-title {
-            margin-top: 0px;
-            margin-bottom: 30px;
+              margin-bottom: 30px;
 
-            font-weight: 900;
-            font-size: 26px;
-            line-height: 1.62;
-
-            text-align:center;
-            color: $hero-title-color;
-
-            letter-spacing: 0.06em;
-            text-transform: uppercase;
-
-            @media screen and (min-width: $desktop) {
+              font-weight: 900;
+              font-size: 26px;
+              line-height: 1.62;
+            
+              letter-spacing: 0.06em;
+              text-transform: uppercase;
+            
+              color: $hero-title-color;
+            
+              @media screen and (min-width: $desktop) {
                 font-size: 44px;
                 line-height: 1.36;
               }
