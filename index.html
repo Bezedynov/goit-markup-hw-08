@@ -395,6 +395,11 @@
    <!-- Modal window -->
    <div class="backdrop is-hidden" data-modal>
     <div class="modal">
+      <button class="modal-close" data-modal-close>
+        <svg class="icon-close" width="11" height="11">
+          <use href="./images/sprite-modal.svg#close-modal"></use>
+        </svg>
+      </button>
       <b class="modal-title">Оставьте свои данные, мы вам перезвоним</b>
       <form class="form">
         <label class="form-label">
@@ -437,15 +442,10 @@
              <input class="checkbox" type="checkbox" name="policy" />
              <span class="policy-icon"></span>
              Соглашаюсь с рассылкой и принимаю
-             <a class="link" href="">Условия договора</a>
+             <a class="form-link" href="">Условия договора</a>
            </label>
          <button class="btn" type="submit">Отправить</button>
       </form>
-        <button class="modal-close" data-modal-close>
-          <svg class="icon-close" width="11" height="11">
-            <use href="./images/sprite-modal.svg#close-modal"></use>
-          </svg>
-        </button>
      </div>
   </div>
   <script src="./js/modal.js"></script>

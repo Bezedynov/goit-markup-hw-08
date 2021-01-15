@@ -1,38 +1,102 @@
 /* Modal button */
 .backdrop {
-    position: fixed;
-    top: 0;
-    left: 0;
-  
-    width: 100%;
-    height: 100%;
-  
-    background-color: rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background: rgba(0, 0, 0, 0.2);
+
+  @media screen and (max-width: 479px) {
+    padding: 50px 15px;
+  }
+  overflow-y: scroll;
+  z-index: 999;
   }
   
-  .backdrop.is-hidden {
+  .is-hidden {
     opacity: 0;
     pointer-events: none;
   }
   
   .modal {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    padding: 40px;
+    position: relative;
+    width: 100%;
+    padding: 20px;
   
-    min-width: 528px;
-    min-height: 580px;
-  
-    transform: translate(-50%, -50%);
     background-color: $hero-title-color;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
+  
+    @media screen and (min-width: $mobile) {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+  
+      padding: 40px;
+      max-width: 450px;
+      height: 610px;
+  
+      transform: translate(-50%, -50%);
+    }
+  
+    @media screen and (min-width: $desktop) {
+      max-width: 528px;
+      height: 581px;
+    }
+  
+    @media screen and (max-width: 479px) {
+      padding-top: 40px;
+    }
   }
+
+  .modal-close {
+    position: absolute;
+    top: 8px;
+    right: 8px;
   
-  /* Form */
+    display: flex;
+    width: 30px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
   
+    background-color: $hero-title-color;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  
+    transition: $timing-function;
+    cursor: pointer;
+  
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
+  }
+
+  .icon-close {
+    fill: currentColor;
+  }
+
+  .modal-title {
+    display: block;
+    margin-bottom: 12px;
+  
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: center;
+  
+    color: $title-text-color;
+  
+    @media screen and (min-width: $desktop) {
+      line-height: 1.17;
+    }
+  }
+
   .form {
     display: flex;
     flex-direction: column;
@@ -43,6 +107,168 @@
   
     color: $primary-text-color;
   }
+
+  .form-text {
+    display: block;
+    margin-bottom: 4px;
+  }
+
+  .input-group {
+    position: relative;
+    margin-bottom: 10px;
+  
+    color: $title-text-color;
+  }
+
+  .form-input {
+    width: 100%;
+    height: 40px;
+    padding: 11px 11px 11px 42px;
+  
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    transition: $timing-function;
+  
+    &:focus {
+      outline-color: $accent-color;
+    }
+  }
+
+  .form-icon {
+    position: absolute;
+    display: inline-block;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+  
+    fill: $title-text-color;
+
+
+    position: absolute;
+    top: 50%;
+    left: 12px;
+  
+    transition: $timing-function;
+    transform: translateY(-50%);
+    fill: currentColor;
+  }
+
+  .form-input {
+    &:focus + .form-icon {
+    fill: $accent-color;
+  }
+}
+
+.comment {
+  width: 100%;
+  padding: 12px 16px;
+  margin-bottom: 20px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+
+  &::placeholder {
+    line-height: 1.14;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+  }
+
+  &:focus {
+    outline-color: $accent-color;
+  }
+}
+
+.form-policy {
+  display: flex;
+  margin-bottom: 30px;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+
+  @media screen and (min-width: $desktop) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+
+  @media screen and (max-width: 479px) {
+    display: block;
+  }
+}
+
+.checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.policy-icon {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-right: 8px;
+
+  border: 2px solid #000000;
+  border-radius: 2px;
+}
+
+.checkbox {
+  &:checked + .policy-icon {
+  border-color: $accent-color;
+  background-color: $accent-color;
+  background-image: url('../images/icon check .svg');
+  background-size: contain;
+  background-origin: border-box;
+}
+}
+
+.form-link {
+  margin-left: 5px;
+  padding: 0; 
+  text-decoration: none;
+
+  color: $accent-color;
+  text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  /* Form */
+  
+ 
   
   .form-label {
     display: flex;
@@ -57,13 +283,7 @@
     border-radius: 4px;
   }
   
-  .form-input {
-    width: 100%;
-    height: 40px;
-    padding: 11px 42px;
-  
-    color: $title-text-color;
-  }
+
   
   .form-label .form-input,
   .form-label .comment {    
@@ -73,149 +293,35 @@
   }
 
   
-  .form-input {
-      &:focus + .form-icon {
-      fill: $accent-color;
-    }
-  }
+
 
   
-  .comment {
-    padding: 12px 16px;
 
-    &::placeholder {
-      font-size: 14px;
-      line-height: 1.14;
-      letter-spacing: 0.01em;
-      color: rgba(117, 117, 117, 0.5);
-    }
-  }
     
-  .form-text {
-    display: inline-block;
-    margin-bottom: 4px;
-  }
+
   
   .form-label textarea {
     margin-bottom: 20px;
   }
   
-  .modal-title {
-    display: block;
-    margin-bottom: 12px;
-  
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 1.15;
-    letter-spacing: 0.03em;
-    text-align: center;
-  
-    color: $title-text-color;
 
-    @media screen and (min-width: $desktop) {
-      line-height: 1.17;
-    }
-  }
   
-  .form-policy {
-    display: flex;
-    margin-bottom: 30px;
-  
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    align-items: center;
-  }
-  
-  .checkbox {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-  
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-  }
-  
-  .policy-icon {
-    display: inline-block;
-    width: 15px;
-    height: 15px;
-    margin-right: 8px;
-  
-    border: 2px solid #000000;
-    border-radius: 2px;
-  }
-  
-  .checkbox {
-      &:checked + .policy-icon {
-      border-color: $accent-color;
-      background-color: $accent-color;
-      background-image: url('../images/icon check .svg');
-      background-size: contain;
-      background-origin: border-box;
-    }
-  }
-  
-  .form-policy .link {
-    margin-left: 5px;
-    color: $accent-color;
-    text-decoration: underline;
-  }
-  
-  .input-group {
-    position: relative;
-  }
-  
-  .form-icon {
-    position: absolute;
-    display: inline-block;
-    top: 50%;
-    left: 12px;
-    transform: translateY(-50%);
-  
-    fill: $title-text-color;
-  }
-  
-  
-  .modal-close {
-    position: absolute;
-    top: 8px;
-    right: 8px;
-  
-    display: flex;
-    width: 30px;
-    height: 30px;
-    padding: 0;
-    align-items: center;
-    justify-content: center;
-  
-    color: #000000;
-  
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    background-color: $hero-title-color;
-    border-radius: 50%;
-  
-    cursor: pointer;
-    transition-property: color;
-    transition-timing-function: $timing-function;
 
-      &:focus {
-      border-color: $accent-color;
-      color: $accent-color;
-      }
-  }
   
-  .icon-close {
-    width: 11px;
-    height: 11px;
-    margin-left: auto;
-    margin-right: auto;
+
   
-    fill: currentColor;
-  }
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
   
