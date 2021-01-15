@@ -625,39 +625,47 @@ button {
 }
 
 /* Section-Features */
+.features-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: -15px;
+}
+
 .list-item {
-  width: 270px;
+  margin: 15px;
 }
 
 .list-item::before {
   display: block;
-  content: "";
+  content: '';
   height: 120px;
+  margin-bottom: 30px;
+  background: #F5F4FA;
   background-repeat: no-repeat;
   background-position: center;
-  background-color: #F5F4FA;
   border-radius: 4px;
-  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .list-item {
+    width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .list-item {
+    width: 270px;
+  }
 }
 
 .icon-antenna::before {
   background-image: url("../../../images/icon/features/antenna 1.svg");
 }
 
-.icon-clock::before {
-  background-image: url("../../../images/icon/features/clock 1.svg");
-}
-
-.icon-diagram::before {
-  background-image: url("../../../images/icon/features/diagram 1.svg");
-}
-
-.icon-astronaut::before {
-  background-image: url("../../../images/icon/features/astronaut 1.svg");
-}
-
 .prima-section-title {
-  margin-top: 0px;
   margin-bottom: 10px;
 }
 
@@ -672,25 +680,22 @@ button {
   color: #212121;
 }
 
+.icon-clock::before {
+  background-image: url("../../../images/icon/features/clock 1.svg");
+}
+
+.icon-diagram::before {
+  background-image: url("../../../images/icon/features/diagram 1.svg");
+}
+
+.icon-astronaut::before {
+  background-image: url("../../../images/icon/features/astronaut 1.svg");
+}
+
 .prima-section-text {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
-}
-
-.features-list {
-  margin-bottom: 83px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.features-list li:not(:last-child) {
-  margin-right: 30px;
-}
-
-.features-list p {
-  margin-top: 0px;
 }
 
 /* Services block (company functions) */
