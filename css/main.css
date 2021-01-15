@@ -665,6 +665,18 @@ button {
   background-image: url("../../../images/icon/features/antenna 1.svg");
 }
 
+.icon-clock::before {
+  background-image: url("../../../images/icon/features/clock 1.svg");
+}
+
+.icon-diagram::before {
+  background-image: url("../../../images/icon/features/diagram 1.svg");
+}
+
+.icon-astronaut::before {
+  background-image: url("../../../images/icon/features/astronaut 1.svg");
+}
+
 .prima-section-title {
   margin-bottom: 10px;
 }
@@ -678,18 +690,6 @@ button {
 .prima-section-title,
 .second-section-title {
   color: #212121;
-}
-
-.icon-clock::before {
-  background-image: url("../../../images/icon/features/clock 1.svg");
-}
-
-.icon-diagram::before {
-  background-image: url("../../../images/icon/features/diagram 1.svg");
-}
-
-.icon-astronaut::before {
-  background-image: url("../../../images/icon/features/astronaut 1.svg");
 }
 
 .prima-section-text {
@@ -721,15 +721,14 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-bottom: 94px;
+  margin-left: -15px;
+  margin-right: -15px;
 }
 
 .company-functions .item {
   position: relative;
-}
-
-.company-functions li + li {
-  margin-left: 30px;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 .service-text {
@@ -740,14 +739,14 @@ button {
   width: 100%;
   padding: 27px 15px;
   margin: 0;
-  color: #FFFFFF;
-  text-transform: uppercase;
-  text-align: center;
-  font-style: normal;
-  font-weight: 700;
   font-size: 14px;
+  font-weight: 700;
   line-height: 1.14;
   letter-spacing: 0.03em;
+  text-align: center;
+  text-transform: uppercase;
+  font-style: normal;
+  color: #FFFFFF;
   background-color: rgba(47, 48, 58, 0.8);
 }
 
