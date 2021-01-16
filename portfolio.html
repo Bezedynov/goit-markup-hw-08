@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
-    
-    <link rel="stylesheet" href="./css/main.min.css"/>
-    <title>Portfolio</title>
-</head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Portfolio</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
+          rel="stylesheet"
+        />
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+        />
+        <link rel="stylesheet" href="./css/main.min.css" />
+      </head>
 <body class="page">
     <!--Шапка сайта-->
  <header class="header-style header-portfolio">
@@ -19,39 +24,61 @@
             <a class="header-logo logo" href="./index.html">
                 Web<span class="logo-first">Studio</span>
             </a>  
+            <button
+            class="menu-button"
+            type="button"
+            aria-expanded="false"
+            aria-controls="menu-container"
+            data-menu-button
+          >
+          <svg
+            class="menu-icon"
+            width="40"
+            height="40"
+            aria-label="Переключатель мобильного меню"
+          >
+          <use
+              class="button-menu"
+              href="./images/Adaptive button sprite.svg#menu"
+          ></use>
+          <use
+              class="button-close"
+              href="./images/Adaptive button sprite.svg#close"
+          ></use>
+          </svg>
+        </button>
+        <div class="menu-container" id="menu-container" data-menu>
             <ul class="site-nav list">
-                <li class="item"><a class="link" href="./index.html">Студия</a></li>
-                <li class="item"><a class="link current" href="">Портфолио</a></li>
-                <li class="item"><a class="link" href="">Контакты</a></li>
-            </ul>
-            <address class="header-contacts">
-                <ul class="contact-info list">
-                    <li class="item"><a class="icon-email" href="mailto:info@devstudio.com">
-                        <svg class="icon" width="16" height="12">
-                            <use href="./images/contacts-sprite.svg#icon-envelope">
-                                
-
-                            </use>
-                        </svg>
-                        info@devstudio.com</a>
-                    </li>
-                    <li class="item"><a class="icon-smart" href="tel:380961111111">
-                        <svg class="icon" width="10" height="16">
-                            <use href="./images/contacts-sprite.svg#icon-smartphone"></use>
-                        </svg>
-                        +38-096-111-11-11</a></li>            
-                </ul>
-            </address>
-        </nav>
-    </div>    
- </header>
+                <li class="item"><a class="header-link" href="./index.html">Студия</a></li>
+                <li class="item"><a class="header-link current" href="./portfolio.html">Портфолио</a></li>
+                <li class="item"><a class="header-link" href="">Контакты</a></li>
+              </ul>
+              <div class="header-contacts">              
+                  <a class="icon-email" href="mailto:info@devstudio.com">
+                      <svg class="icon" width="16" height="12">
+                          <use href="./images/contacts-sprite.svg#icon-envelope"> 
+                          </use>
+                      </svg>
+                      info@devstudio.com
+                  </a>               
+                  <a class="icon-smart" href="tel:380961111111">
+                      <svg class="icon" width="10" height="16">
+                          <use href="./images/contacts-sprite.svg#icon-smartphone"></use>
+                      </svg>
+                      +38-096-111-11-11
+                  </a>            
+              </div>           
+            </div>               
+            </nav>
+          </div>    
+       </header>
  
         <!--<h1>Портфолио WebStudio</h1>-->
  <main>    
             <!--Фильтр портфолио-->
     <section class="projects section">
         <div class="container">
-          <div class="portfolio-filtr-container">
+          <!-- <div class="portfolio-filtr-container"> -->
                 <ul class="portfolio-filtr list">
                     <li class="item">
                         <button type="button" class="portfolio-button">Все</button>
@@ -69,7 +96,7 @@
                         <button type="button" class="portfolio-button">Маркетинг</button>
                     </li>           
                 </ul>
-          </div>
+          <!-- </div> -->
           
 
             <!--<h1>Портфолио дизайнерской вебстудии Webstudio</h1>-->
@@ -78,7 +105,10 @@
                 <li class="item"> 
                     <a href="">
                         <div class="image-content">
-                            <img src="./images/portfolio/img8.jpg" alt="Технокряк" width="370">
+                            <img src="./images/portfolio/img8.jpg" 
+                            alt="Технокряк" 
+                            srcset="./images/portfolio/img8@2x.jpg 2x"
+                            />
                             <p class="overlay-text">
                                 Scientia potentia est (Знание – сила)
                             </p>
@@ -92,7 +122,10 @@
                 <li class="item">
                     <a href="">
                         <div class="image-content">
-                            <img src="./images/portfolio/img9.jpg" alt="Постер New Orlean Vs Gold Star" width="370">
+                            <img src="./images/portfolio/img9.jpg" 
+                            alt="Постер New Orlean Vs Gold Star" 
+                            srcset="./images/portfolio/img9@2x.jpg 2x"
+                            />
                             <p class="overlay-text">
                                 Repetitio est mater studiorum (Повторение – мать учения)
                             </p>
@@ -106,7 +139,10 @@
                 <li class="item">
                     <a href="">
                         <div class="image-content">
-                            <img src="./images/portfolio/img10.jpg" alt="Ресторан Seafood" width="370">
+                            <img src="./images/portfolio/img10.jpg" 
+                            alt="Ресторан Seafood" 
+                            srcset="./images/portfolio/img10@2x.jpg 2x"
+                            />
                             <p class="overlay-text">
                                 Fortes fortuna juvat (Храбрым судьба помогает)                            
                             </p>
@@ -120,7 +156,10 @@
                 <li class="item"> 
                     <a href="">
                         <div class="image-content">
-                            <img src="./images/portfolio/img11.jpg" alt="Проект Prime" width="370">
+                            <img src="./images/portfolio/img11.jpg" 
+                            alt="Проект Prime" 
+                            srcset="./images/portfolio/img11@2x.jpg 2x"
+                            />
                             <p class="overlay-text">
                                 Si felix esse vis, esto (Если хочешь быть счасливым, будь!)
                             </p>
@@ -134,7 +173,10 @@
                 <li class="item">
                     <a href="">
                         <div class="image-content">
-                            <img src="./images/portfolio/img12.jpg" alt="Проект Boxes" width="370">
+                            <img src="./images/portfolio/img12.jpg" 
+                            alt="Проект Boxes" 
+                            srcset="./images/portfolio/img12@2x.jpg 2x"
+                            />
                             <p class="overlay-text">
                                 Amor vincit omnia (Любовь побеждает все)
                             </p>
@@ -148,7 +190,10 @@
                 <li class="item"> 
                     <a href="">
                         <div class="image-content">
-                            <img src="./images/portfolio/img13.jpg" alt="Inspiration has no Borders" width="370">
+                            <img src="./images/portfolio/img13.jpg" 
+                            alt="Inspiration has no Borders" 
+                            srcset="./images/portfolio/img13@2x.jpg 2x"
+                            />
                             <p class="overlay-text">
                                 Nosce te ipsum (Познай самого себя)
                             </p>
@@ -162,7 +207,10 @@
                 <li class="item"> 
                     <a href="">
                         <div class="image-content">
-                            <img src="./images/portfolio/img14.jpg" alt="Издание Limited Edition" width="370">
+                            <img src="./images/portfolio/img14.jpg" 
+                            alt="Издание Limited Edition" 
+                            srcset="./images/portfolio/img14@2x.jpg 2x"
+                            />
                             <p class="overlay-text">
                                 Tempora mutantur et nos mutamur in illis (Времена меняются, и мы меняемся вместе с ними)
                             </p>
@@ -176,7 +224,10 @@
                 <li class="item"> 
                     <a href="">
                         <div class="image-content">
-                            <img src="./images/portfolio/img15.jpg" alt="Проект LAB" width="370">
+                            <img src="./images/portfolio/img15.jpg" 
+                            alt="Проект LAB" 
+                            srcset="./images/portfolio/img15@2x.jpg 2x"
+                            />
                             <p class="overlay-text">
                                 Homo locum ornat, non locus hominem (Человек украшает место, а не место человека)
                             </p>
@@ -190,7 +241,10 @@
                 <li class="item">
                     <a href="">
                         <div class="image-content">
-                            <img src="./images/portfolio/img16.jpg" alt="Growing business" width="370">
+                            <img src="./images/portfolio/img16.jpg" 
+                            alt="Growing business" 
+                            srcset="./images/portfolio/img16@2x.jpg 2x"
+                            />
                             <p class="overlay-text">
                                 Dum spiro, spero (Пока дышу, надеюсь)
                             </p>
@@ -209,31 +263,45 @@
    <!--Футер страницы-->
    <footer class="footer">
     <div class="footer-container">
+      <div class="footer-info">
+        
         <div class="footer-contacts">
-            <a class="footer-logo logo" href="./index.html">
-                Web<span class="logo-second">Studio</span>
-            </a>
-           <ul class="contact-info-footer list">
-               <li> <p>г. Киев, пр-т Леси Украинки, 26</p></li>
-               <li class="mail"><a class="footer-contact" href="mailto:info@example.com">info@example.com</a></li>
-               <li class="footer-telephon"><a class="footer-contact telephone" href="tel:+38-096-111-11-11">+38-096-111-11-11</a></li>              
-           </ul>       
+          <a class="footer-logo logo" href="./index.html">
+            Web<span class="logo-second">Studio</span>
+          </a> 
+          <ul class="address list">
+             <li>
+               <a 
+               class="address-link"
+               target="_blank"
+               href="https://goo.gl/maps/JPTJLpiqcLhhmCbZ7"
+               >г. Киев, пр-т Леси Украинки, 26</a>                
+              </li>
+             <li class="mail"><a class="footer-contact" href="mailto:info@example.com">info@example.com</a></li>
+             <li class="footer-telephon"><a class="footer-contact telephone" href="tel:+38-096-111-11-11">+38-096-111-11-11</a></li>              
+          </ul>       
         </div>
+
         <div class="footer-networks">
-            <b class="footer-title">Присоединяйтесь</b>
-            <ul class="footer-icon">
-                <li class="list"><a class="link icon-instagram" href=""></a></li>
-                <li class="list"><a class="link icon-twitter" href=""></a></li>
-                <li class="list"><a class="link icon-facebook" href=""></a></li>
-                <li class="list"><a class="link icon-linkedin" href=""></a></li>
-            </ul>
-        </div> 
+          <b class="footer-title">Присоединяйтесь</b>
+          <ul class="footer-icon list">
+              <li class="footer-item"><a class="link icon-instagram" href=""></a></li>
+              <li class="footer-item"><a class="link icon-twitter" href=""></a></li>
+              <li class="footer-item"><a class="link icon-facebook" href=""></a></li>
+              <li class="footer-item"><a class="link icon-linkedin" href=""></a></li>
+          </ul>
+        </div>
+
+      </div>
+
         <div>
-            <b class="footer-title">Подпишитесь на рассылку</b>           
+            <b class="footer-title">Подпишитесь на рассылку</b>
+            <div class="form-subscribe">
                 <form class="footer-form" action="" method="post">
                     <input class="footer-input" type="email" name="mail" id="mail" placeholder="E-mail">
                     <button class="footer-button button">Подписаться</button>
-                </form>            
+                </form>
+            </div>            
         </div> 
     </div>
    </footer>
