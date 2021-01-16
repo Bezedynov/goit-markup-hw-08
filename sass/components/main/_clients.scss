@@ -11,39 +11,55 @@
     margin-bottom: 50px;
   }
 }
-  
-.clients-lists {
-    display: flex;
-    margin: 0 -15px;
-  }
-  
-.clients .list {
-    display: inline-block;
-    margin: 0 15px;
-  }
-  
-.clients .link {
-    display: flex;
-    width: 170px;
-    height: 90px;
-    align-items: center;
-    justify-content: center;
-  
-    border: 1px solid $icon-gray-color;
-    border-radius: 4px;
-    color: $icon-gray-color;
 
-    &:hover,
-    &:focus {
+.clients-lists {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: -15px;
+}
+
+.clients .list {
+  // display: inline-block;
+  margin: 0 15px;
+}
+
+.clients .link {
+
+  display: flex;
+  width: 210px;
+  height: 90px;
+
+  align-items: center;
+  justify-content: center;
+  border: 1px solid $icon-gray-color;
+  border-radius: 4px;
+  color: $icon-gray-color;
+
+  transition: $timing-function;
+
+  &:hover,
+  &:focus {
     color: $accent-color;
     border-color: $accent-color;
     transition: $timing-function;  
-    }    
-  }  
-.clients .icon {
-    fill: currentColor;
   }
-// .clients {
-//     padding-top: 94px;
-//     padding-bottom: 94px;
-//   }
+
+  @media screen and (min-width: $tablet) {
+    width: 226px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 170px;
+  }
+} 
+
+.clients .icon {
+  fill: currentColor;
+}
+
+
