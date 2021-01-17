@@ -1,106 +1,89 @@
 /* Web-studio projects  */
 
-.portfolio-type {
-    color: $primary-text-color;  
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.88;
-    letter-spacing: 0.03em;  
-  }
-  
-  .portfolio-title {
-    color: $title-text-color;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
+.webstudio-portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
 
-    margin-bottom: 4px;
+  @media screen and (max-width: 767px) {
+    margin-top: 40px;
   }
-  
-  .webstudio-portfolio {
-      display: flex;
-      flex-wrap: wrap;
-      width: 1200px;
-      
-      padding-right: 15px;
-      margin-left: auto;
-      margin-right: auto;
-      margin-bottom: 94px;
-  }
-  
-  .webstudio-portfolio {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  
-  .webstudio-portfolio .item {
-    width: calc((100% - 60px) / 3);
-    margin-right: 30px;
-    margin-bottom: 30px;
-  
-    background-color: $hero-title-color;
-    border: 1px solid #eeeeee;
+}
 
-    &:hover,
-    &:focus {
-      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-        1px 4px 6px rgba(0, 0, 0, 0.16);
-    
-      transition: $timing-function;
-    }
 
-    &:nth-child(3n) {
-      margin-right: 0;
-    }
-    
-    &:nth-last-child(-n + 3) {
-      margin-bottom: 0;
-    }
+.portfolio-item {
+  width: 450px;
+  margin: 15px;
+
+  transition: $timing-function;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
   }
-  
-  .image-content {
-    position: relative;
-    overflow: hidden;
+
+  @media screen and (min-width: $tablet) {
+    width: 354px;
   }
-  
-  .webstudio-portfolio a {
-    &:hover .overlay-text,
-    &:focus .overlay-text {
-      transform: translateY(0);
-    }
+
+  @media screen and (min-width: $desktop) {
+    width: 370px;
   }
+}
+
+.portfolio-link {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+
+.image-content {
   
-  .overlay-text {
-    display: flex;
-    position: absolute;
-    top: 0;
-    left: 0;
-  
-    margin: 0;
-    width: 100%;
-    height: 100%;
-    padding: 63px 24px;
-  
-    font-size: 18px;
-    line-height: 1.56;
-    color: $hero-title-color;
-    text-transform: uppercase;
-    text-align: center;
-  
-    align-items: center; 
-    background-color: rgba(33, 150, 243, 0.9);
-  
-    overflow: hidden;
-    transform: translateY(100%);
-    transition: transform $timing-function;
+  position: relative;
+  overflow: hidden;
+  max-width: 450px;
+  background-color: $hero-background-color;
+}
+
+.overlay-text {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  padding: 63px 24px;
+
+  font-size: 18px;
+  line-height: 1.56;
+  color: $hero-title-color;
+  text-transform: uppercase;
+  text-align: center;
+
+  align-items: center; 
+  background-color: rgba(33, 150, 243, 0.9);
+
+  overflow: hidden;
+  transform: translateY(100%);
+  transition: transform $timing-function;
+
+  .portfolio-link:hover &,
+  .portfolio-link:focus & {
+    transform: translateY(0);
   }
-  
+}
   .text-part {
-    padding: 20px 24px;
+    padding: 20px 18px;
+    border: 1px solid #eeeeee;
+    border-top-color: $hero-title-color;
   }
-  
+    
   .portfolio-title {
+    margin-bottom: 4px;
+
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
@@ -108,14 +91,45 @@
   
     color: $title-text-color;
   }
-  
-  .portfolio-type {
-    margin-top: 0;
-  
-    font-size: 16px;
-    line-height: 1.9;
-    letter-spacing: 0.03em;
-  
-    color: $primary-text-color;
-  }
+
+
+.portfolio-type {
+  margin-top: 0;
+
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.03em;
+  font-weight: 400;
+
+  color: $primary-text-color;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   
