@@ -956,9 +956,9 @@ button {
 }
 
 footer {
+  background-color: #2F303A;
   padding-top: 60px;
   padding-bottom: 60px;
-  background-color: #2F303A;
 }
 
 @media screen and (max-width: 1199px) {
@@ -978,6 +978,11 @@ footer {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
   }
 }
 
@@ -1014,9 +1019,13 @@ footer {
 
 .address {
   font-style: normal;
+  width: 232px;
 }
 
 .address-link {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
   display: block;
   margin-bottom: 8px;
   line-height: 1.71;
@@ -1038,13 +1047,9 @@ footer {
 
 .footer-title {
   letter-spacing: 0.03em;
-  display: block;
+  display: inline-block;
   margin-bottom: 20px;
   color: #FFFFFF;
-}
-
-.footer-icon .list:not(:last-child) {
-  margin-right: 10px;
 }
 
 .footer-icon {
@@ -1053,9 +1058,10 @@ footer {
   display: inline-flex;
   margin-left: -5px;
   margin-right: -5px;
+  padding: 0;
 }
 
-.footer-item {
+.footer-icon .list {
   margin-left: 5px;
   margin-right: 5px;
 }
@@ -1136,6 +1142,22 @@ footer {
     width: 358px;
     margin-right: 12px;
   }
+}
+
+.footer-input::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-input:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-input::-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .footer-button {
