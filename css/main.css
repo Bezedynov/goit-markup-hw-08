@@ -142,28 +142,6 @@ button {
   background-color: #188ce8;
 }
 
-.footer-button {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding-left: 28px;
-  padding-right: 28px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-}
-
-.footer-button::after {
-  content: '';
-  display: inline-block;
-  width: 24px;
-  height: 24px;
-  margin-left: 10px;
-  background-image: url("../../images/icon send.svg");
-  background-repeat: no-repeat;
-}
-
 .form .btn {
   display: inline-block;
   width: 200px;
@@ -910,7 +888,7 @@ button {
 }
 
 .clients .list {
-  margin: 0 15px;
+  margin: 15px;
 }
 
 .clients .link {
@@ -1020,6 +998,7 @@ footer {
 .address {
   font-style: normal;
   width: 232px;
+  margin: auto;
 }
 
 .address-link {
@@ -1047,7 +1026,7 @@ footer {
 
 .footer-title {
   letter-spacing: 0.03em;
-  display: inline-block;
+  display: block;
   margin-bottom: 20px;
   color: #FFFFFF;
 }
@@ -1161,9 +1140,7 @@ footer {
 }
 
 .footer-button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: inline-block;
   padding: 10px 29px;
   margin: 0;
   min-width: 200px;

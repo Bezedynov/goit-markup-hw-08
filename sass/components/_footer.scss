@@ -7,10 +7,7 @@ footer {
     text-align: center;
   }
 }
-// .footer {
-//   box-sizing: border-box;
-//   display: block;
-// }
+
 
 .footer-container {
 
@@ -53,7 +50,8 @@ footer {
 
 .address {
   font-style: normal;
-  width: 232px;  
+  width: 232px;
+  margin: auto;  
 }
 
 .address-link {
@@ -73,6 +71,7 @@ footer {
   margin: 0;
   text-decoration: none;
 
+
   display: block;
 
   line-height: 1.71;
@@ -88,7 +87,7 @@ footer {
   
   letter-spacing: 0.03em;
   
-  display: inline-block;
+  display: block;
   margin-bottom: 20px;
   
   color: $hero-title-color;
@@ -148,6 +147,7 @@ footer {
     @media screen and (min-width: $desktop) {
       display: flex;
     }
+
   }
 
   .footer-input {
@@ -181,20 +181,9 @@ footer {
     }
   }
 
-// footer img {
-//   margin-bottom: 20px;
-// }
-// .footer .mail {    
-//   margin-bottom: 9px;
-// }
-
-// .footer-networks {
-//   margin-right: 93px;
-// }
-
 
 .footer-button {
-  display: flex;
+  display: inline-block;
   padding: 10px 29px;
   margin: 0;
   min-width: 200px;
