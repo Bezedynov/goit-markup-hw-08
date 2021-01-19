@@ -1140,7 +1140,9 @@ footer {
 }
 
 .footer-button {
-  display: inline-block;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   padding: 10px 29px;
   margin: 0;
   min-width: 200px;

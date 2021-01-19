@@ -3,14 +3,6 @@
   display: flex;
   flex-wrap: wrap;
   margin: -15px;
-
-  // & li:not(:last-child) {
-  //   margin-right: 30px;
-  // }
-
-  // & p {
-  //   margin-top: 0px;  
-  // }
 }
 
 .list-item {
@@ -38,25 +30,25 @@ margin: 15px;
 
 .icon-antenna {
   &::before {
-    background-image: url('../../../images/icon/features/antenna\ 1.svg');
+    background-image: url('../../../images/icon/features/antenna 1.svg');
   }
 }
 
 .icon-clock {
   &::before {
-    background-image: url('../../../images/icon/features/clock\ 1.svg');
+    background-image: url('../../../images/icon/features/clock 1.svg');
 }
 }
 
 .icon-diagram {
   &::before {
-    background-image: url('../../../images/icon/features/diagram\ 1.svg');
+    background-image: url('../../../images/icon/features/diagram 1.svg');
 }
 }
  
 .icon-astronaut {
   &::before {
-    background-image: url('../../../images/icon/features/astronaut\ 1.svg');
+    background-image: url('../../../images/icon/features/astronaut 1.svg');
 }
 }
 
