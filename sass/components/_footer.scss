@@ -10,9 +10,6 @@ footer {
 
 
 .footer-container {
-
-
-
   @media screen and (min-width: $desktop) {
     display: flex;
     justify-content: space-between;
@@ -126,19 +123,19 @@ footer {
   } 
 
   .footer-networks .icon-instagram {
-    background-image: url('../../images/icon/social/instagram 2 f.svg');
+    background-image: url('../images/icon/social/instagram 2 f.svg');
   }
   
   .footer-networks .icon-twitter {
-    background-image: url('../../images/icon/social/twitter 1 f.svg');
+    background-image: url('../images/icon/social/twitter 1 f.svg');
   }
   
   .footer-networks .icon-facebook {
-    background-image: url('../../images/icon/social/facebook 1 f.svg');
+    background-image: url('../images/icon/social/facebook 1 f.svg');
   }
   
   .footer-networks .icon-linkedin {
-    background-image: url('../../images/icon/social/linkedin 1 f.svg');
+    background-image: url('../images/icon/social/linkedin 1 f.svg');
   } 
 
   .footer-form {
@@ -206,7 +203,7 @@ footer {
     height: 24px;
     margin-left: 10px;
   
-    background-image: url('../../images/icon send.svg');
+    background-image: url('../images/icon send.svg');
   }
 }
 
